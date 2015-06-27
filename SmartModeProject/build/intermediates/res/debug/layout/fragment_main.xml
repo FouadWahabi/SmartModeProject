@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iac.smartmodeproject.ui.widgets.AnimLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.iac.smartmodeproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.iac.smartmodeproject.ui.widgets.AppTextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/welcome"
+                android:textColor="#000000"
+                android:textSize="19sp"
+                app:typeface="roboto_bold" />
+
+            <com.iac.smartmodeproject.ui.widgets.AppTextView
+                android:id="@+id/app_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_desc"
+                android:textColor="@color/gray_fonce"
+                android:textSize="15sp"
+                app:typeface="roboto_light" />
+        </RelativeLayout>
+    </ScrollView>
+
+</com.iac.smartmodeproject.ui.widgets.AnimLinearLayout><!-- From: file:/D:/SmartModeProject/SmartModeProject/src/main/res/layout/fragment_main.xml -->

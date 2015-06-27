@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartMode</string>
+    <string name="settings_hint">Configure smart modes :</string>
+    <string name="about">About</string>
+    <string name="life_log">Life log</string>
+    <string name="more_options">MORE OPTIONS</string>
+    <string name="sms_option">Enable SMS reply</string>
+    <string name="text_to_speech">Enable SMS reading aloud</string>
+    <string name="author">This app is developed by  Fouad Wahabi, staff member at Insat Android Club</string>
+    <string name="fork"><![CDATA[Feel free to fork me on : <a href="">http://github.com/FouadWahabi</a>]]></string>
+    <string name="welcome">Welcome !</string>
+    <string name="app_desc">
+<![CDATA[<strong>Smart Mode</strong> is a utility application, that
+         makes your phone behave the way you want to, when you want it to. <br> It uses sensors 
+         (like accelorometre, GPS, light sensor...), mic ..., to determine the appropriate mode 
+         (behavior) to apply. ]]>
+    </string>
+
+    <!-- Sleeping mode strings -->
+
+    <string name="sleeping_mode_desc">
+<![CDATA[<p><font color=\'#cc0000\'>Sleeping mode</font><font 
+        color=\'#777777\'>, silences your phone when you are asleep and offers the possibility of selecting
+         list of urgent numbers for them phone rings.</font></p> ]]>
+    </string>
+    <string name="set_sleep_time">Set sleep time ></string>
+    <string name="add_urgent_phone">Add urgent phone number ></string>
+    <string name="disable_sleeping_mode">Disable sleeping mode</string>
+    <string name="sleeping_mode_sms">Sorry, I\'m sleeping now , I\'m gonna call you later !</string>
+    <string name="sleeping_log">You slept</string>
+
+    <!-- Event mode strings -->
+
+    <string name="event_mode_desc">
+<![CDATA[<p><font color=\'#ff8800\'>Event mode</font><font color=\'#777777\'>, silences your phone
+ to avoid disturbing at events you mentioned.</font></p> ]]>
+    </string>
+    <string name="add_tracked_events">Add tracked events ></string>
+    <string name="track_event">Track event</string>
+    <string name="time_sep">-</string>
+    <string name="no_event">Sorry, there\'s no possible event to be tracked !</string>
+    <string name="event_mode_sms">Sorry, I\'m busy now , I\' gonna call you later !</string>
+    <string name="track_all">Track all</string>
+    <string name="disable_event_mode">Disable event mode</string>
+    <string name="event_log">You were in</string>
+
+    <!-- Place mode strings -->
+    <string name="place_mode_desc">
+<![CDATA[<p><font color=\'#669900\'>Place mode</font><font color=\'#777777\'>, 
+        offers the possibilty of adding list of places in which your will automatically
+         be silent.</font></p> ]]>
+    </string>
+    <string name="disable_place_mode">Disable place mode</string>
+    <string name="saved_place_list">Saved place list ></string>
+    <string name="no_saved_place">Sorry, there\'s no saved place !</string>
+    <string name="place_title">Set place label :</string>
+    <string name="place_title_hint">Place title</string>
+    <string name="place_radius">Place radius label :</string>
+    <string name="current_location_error">Unable to get user current location !</string>
+    <string name="place_mode_sms">Sorry, I\'m busy now , I\' gonna call you later !</string>
+    <string name="place_log">You went to</string>
+
+    <!-- Driving mode strings -->
+    <string name="disable_driving_mode">Disable driving mode</string>
+    <string name="driving_mode_desc">
+<![CDATA[<p><font color=\'#9933cc\'>Driving mode</font><font 
+        color=\'#777777\'>, this mode smartly detects when you are driving and turn your phone to be
+         silent.</font></p> ]]>
+    </string>
+    <string name="default_speed">0.0</string>
+    <string name="kmh">Km/h</string>
+    <string name="driving_mode_sms">Sorry, I\'m driving now , I\' gonna call you later !</string>
+    <string name="driving_log">You was driving</string>
+
+</resources>

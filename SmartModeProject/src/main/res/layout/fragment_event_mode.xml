@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iac.smartmodeproject.ui.widgets.AnimLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.iac.smartmodeproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+    <ScrollView
+        android:id="@+id/sleeping_mode_settings"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.iac.smartmodeproject.ui.widgets.AppTextView
+                android:id="@+id/event_mode_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-26dp"
+                android:layout_marginTop="10dp"
+                app:typeface="roboto_light" />
+
+            <View
+                android:id="@+id/ev_separating_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/orange_trans" />
+
+            <LinearLayout
+                android:id="@+id/event_settings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <com.iac.smartmodeproject.ui.widgets.AppButton
+                    android:id="@+id/btn_add_tracked_events"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="@string/add_tracked_events"
+                    android:textSize="20sp"
+                    app:typeface="roboto_light" />
+            </LinearLayout>
+
+            <com.iac.smartmodeproject.ui.widgets.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="7dp"
+                android:text="@string/more_options"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:typeface="roboto_light" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/enable_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:text="@string/sms_option"
+                    android:textColor="#aa000000" />
+            </LinearLayout>
+
+            <com.iac.smartmodeproject.ui.widgets.AppEditText
+                android:id="@+id/event_sms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/normal_edit_text_border"
+                android:padding="10dp"
+                android:textColor="@color/color_selector"
+                android:textSize="12sp"
+                app:typeface="roboto_light" />
+        </LinearLayout>
+    </ScrollView>
+
+</com.iac.smartmodeproject.ui.widgets.AnimLinearLayout>

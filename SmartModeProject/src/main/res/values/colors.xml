@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="actionbar_text">#ffffff</color>
+    <color name="red">#cc0000</color>
+    <color name="green">#669900</color>
+    <color name="orange">#ff8800</color>
+    <color name="violet">#9933cc</color>
+    <color name="red_trans">#72cc0000</color>
+    <color name="green_trans">#72669900</color>
+    <color name="orange_trans">#72ff8800</color>
+    <color name="violet_trans">#729933cc</color>
+    <color name="gray">#b3b3b3</color>
+    <color name="gray_card">#e5e5e5</color>
+    <color name="normal_color">#000000</color>
+    <color name="disabled_color">#777777</color>
+    <color name="blue_sky">#4eb7cd</color>
+    <color name="gray_fonce">#3f3f3f</color>
+    <color name="gray_vive">#8d8d8d</color>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iac.smartmodeproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCAAPbofhKb-G5HFbAFoc0pfCK2sVtA2QY" />
+
+        <activity
+            android:name="com.iac.smartmodeproject.ui.SettingsActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.UrgentPhoneNumbersActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.TrackedEventActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.PlaceListActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.AddPlaceActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.PlaceInfoActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.AboutActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+        <activity
+            android:name="com.iac.smartmodeproject.ui.LifeLogActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.iac.smartmodeproject.ui.SettingsActivity" >
+        </activity>
+
+        <service android:name="com.iac.smartmodeproject.services.MainService" >
+        </service>
+
+        <receiver android:name="com.iac.smartmodeproject.receivers.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.iac.smartmodeproject.receivers.SleepingTimeReceiver" >
+        </receiver>
+        <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+            android:theme="@style/Theme.IAPTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <receiver
+            android:name="com.google.android.gms.wallet.EnableWalletOptimizationReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.wallet.ENABLE_WALLET_OPTIMIZATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

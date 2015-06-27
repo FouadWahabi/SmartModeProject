@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.iac.smartmodeproject"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/place_layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.iac.smartmodeproject.ui.widgets.AppTextView
+            android:id="@+id/place_title_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/place_title"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:typeface="roboto_regular" />
+
+        <com.iac.smartmodeproject.ui.widgets.AppEditText
+            android:id="@+id/place_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/place_title_hint"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#777777"
+            android:textSize="20sp"
+            app:typeface="roboto_regular" />
+
+        <com.iac.smartmodeproject.ui.widgets.AppTextView
+            android:id="@+id/place_radius_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/place_radius"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:typeface="roboto_regular" />
+
+        <LinearLayout
+            android:id="@+id/place_radius"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <SeekBar
+                android:id="@+id/place_radius_seek"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="50" />
+
+            <com.iac.smartmodeproject.ui.widgets.AppEditText
+                android:id="@+id/place_radius_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="100"
+                android:textColor="#777777"
+                android:textSize="20sp"
+                app:typeface="roboto_regular" />
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="12dp"
+            android:tag="@null"
+            map:mapType="normal"
+            map:uiRotateGestures="false"
+            map:uiScrollGestures="false"
+            map:uiTiltGestures="false"
+            map:uiZoomControls="false"
+            map:uiZoomGestures="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/current_location_error"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/current_location_error"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</LinearLayout>

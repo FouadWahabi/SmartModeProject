@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.iac.smartmodeproject"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </ProgressBar>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_event"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/no_event"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tracked_event_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#b3b3b3"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/SmartModeProject/SmartModeProject/src/main/res/layout/layout_tracked_events.xml -->

@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.iac.smartmodeproject"
+    android:id="@+id/setting_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <com.iac.smartmodeproject.ui.widgets.AppTextView
+        android:id="@+id/Reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp"
+        android:text="@string/settings_hint"
+        android:textColor="#777777"
+        android:textSize="18sp"
+        app:typeface="roboto_light" />
+
+    <LinearLayout
+        android:id="@+id/critere_modes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="16dp"
+        android:weightSum="4" >
+
+        <ImageButton
+            android:id="@+id/sleeping_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_sleeping_mode" />
+
+        <ImageButton
+            android:id="@+id/event_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_event_mode" />
+
+        <ImageButton
+            android:id="@+id/place_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_place_mode" />
+
+        <ImageButton
+            android:id="@+id/driving_mode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_driving_mode" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1" >
+
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/D:/SmartModeProject/SmartModeProject/src/main/res/layout/layout_settings_activity.xml -->
